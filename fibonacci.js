@@ -16,7 +16,7 @@ function fibs(len) {
 
 function fibsRec(len, arr = [0, 1]) {
 	if (arr.length >= len) {
-		return arr.slice(0, len);
+		return arr.splice(0, len);
 	}
 
 	arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
